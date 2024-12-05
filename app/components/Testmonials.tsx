@@ -4,8 +4,8 @@ import frame from "@/public/images/Frame 26.svg";
 
 const Testmonials = () => {
   return (
-    <div className="text-center flex-col w-full items-center pb-[60px] lg:pb-[96px]  bg-gradient-to-b from-[#332507] to-black">
-      <h1 className="text-[#fff]  [font-family:PNU] text-[40px] md:mb-[48px] font-bold leading-[normal]">
+    <div className="text-center flex-col w-full items-center pb-[60px] lg:pb-[96px]  ">
+      <h1 className="  [font-family:--font-monadi] text-[#f6be85] text-[40px] md:mb-[48px] font-bold leading-[normal]">
         أراء العملاء
       </h1>
       <div className=" flex items-center justify-center">

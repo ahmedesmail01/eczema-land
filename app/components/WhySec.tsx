@@ -1,21 +1,31 @@
 "use client";
 
 import React from "react";
+// import cardTriangles from "@/public/images/card-triangles.svg";
+import Image from "next/image";
+// import logo from "@/public/images/logo.svg";
+import girlCard from "@/public/images/girl-card.svg";
+import triangles from "@/public/images/triangles.svg";
 
 const WhySec = () => {
   const items = [
     {
-      title: "فهم علاقة الجسد والمشاعر:",
+      title: "فهم علاقة الجسد والمشاعر",
       desc: "رؤية واضحة لعلاقة مشاعرك والمرض، مما يساعدك على فهم السبب الجذري الشعوري للمرض",
     },
     {
-      title: "استعادة القدرة الفطرية على الشفاء:",
+      title: "استعادة القدرة الفطرية على الشفاء",
       desc: "تدريبات شعورية مكثفة، لتتعلم  إدارة ذاتك ومشاعرك بفعالية،عند ادارتك لذاتك و مشاعرك بفاعلية تتحسن حالتك الصحية  مع كل تحسن في إدارتك الشعورية  مما يعزز تحسن حالتك الصحية تدريجيًا.",
     },
   ];
   return (
-    <div className="flex flex-col gap-4 justify-center items-center px-4 mb-[60px] lg:mb-[96px]">
-      <h1 className="self-stretch text-[#ffffff] text-center font-[PNU] text-2xl lg:text-[40px] font-bold leading-[160%] lg:mb-[48px]">
+    <div className=" relative w-full flex flex-col gap-4 overflow-hidden justify-center items-center px-4 mb-[60px] lg:mb-[96px]">
+      <Image
+        src={triangles}
+        alt="triangles"
+        className="absolute -right-10 top-10 z-10"
+      />
+      <h1 className="self-stretch text-[#f6be85] text-center font-[PNU] text-2xl lg:text-[40px] font-bold leading-[160%] lg:mb-[48px]">
         لماذا جلسات &quot;الاتزان شفاء&quot;؟
       </h1>
 
@@ -26,30 +36,36 @@ const WhySec = () => {
         {items.map((item, index) => (
           <div
             key={index}
-            className="lg:w-[395px] lg:h-[208px] bg-gradient-to-b from-[#fed573] to-black rounded-2xl p-1"
+            className="bg-transparent p-4 w-[300px] md:w-[350px] h-[448px] flex flex-col gap-4  border border-yellow-700 rounded-lg overflow-hidden"
           >
-            <div className="rounded-2xl h-full bg-black text-center p-4">
-              <h2 className="mb-3 font-bold text-xl">{item.title}</h2>
-              <p className="flex-[1_0_0] text-[#ffffff] text-center [font-family:PNU] text-base font-normal leading-[normal]">
-                {item.desc}
-              </p>
-            </div>
+            <Image src={girlCard} alt="shape" className="w-full " />
+            <h1 className=" [font-family:--font-monadi] text-lg font-bold ">
+              {item.title}
+            </h1>
+            <p className="font-semibold w-full">{item.desc}</p>
           </div>
         ))}
-        <div className="lg:w-[395px] lg:h-[208px] bg-gradient-to-b from-[#fed573] to-black rounded-2xl p-1">
-          <div className="rounded-2xl h-full text-white bg-black text-center p-4">
-            <h2 className="mb-3 font-bold text-[18px]">
-              التحرر من حال انا لست مفعولا به
-            </h2>
-            <p className="mb-3 font-bold text-[18px]">أنا من ذهبت الى المرض</p>
-            <p className="mb-3 font-bold text-[18px]">
-              انا من اذهب الى الشفاء{" "}
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   );
 };
 
 export default WhySec;
+
+/* 
+
+<div
+            key={index}
+            className="bg-transparent w-[348px] flex flex-col gap-4  border border-yellow-700 rounded-lg overflow-hidden"
+          >
+            <Image src={cardTriangles} alt="shape" className="w-full " />
+            <div className="flex  items-center gap-2 justify-between mb-4">
+              <h1 className="[font-family:--font-monadi] text-lg font-bold ">
+                {item.title}
+              </h1>
+              <Image src={logo} alt="logo" className="w-[119px]" />
+            </div>
+            <p className="p-4 font-semibold w-full">{item.desc}</p>
+          </div>
+
+*/

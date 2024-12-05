@@ -16,11 +16,11 @@ const Suffer = () => {
         alt="image"
         width={612}
         height={986}
-        className="w-[330px] mb-4 lg:w-[612px] lg:h-[840px] object-cover rounded-3xl"
+        className="w-[300px] mb-4 lg:w-[612px] lg:h-[840px] object-cover rounded-3xl"
       />
       <div
         dir="rtl"
-        className="lg:w-[612px] w-[330px]  lg:h-[840px] bg-[#252113] lg:py-[48px] px-4 py-8 lg:px-[96px] text-white rounded-3xl"
+        className="lg:w-[612px] w-[300px]  lg:h-[840px] bg-[#252113] lg:py-[48px] px-4 py-8 lg:px-[96px] text-white rounded-3xl"
       >
         <h1 className="self-stretch text-[#febd21] text-right mb-4   text-2xl  lg:text-[32px] font-bold leading-[160%]">
           اضطراب الغدة الدرقية:{" "}

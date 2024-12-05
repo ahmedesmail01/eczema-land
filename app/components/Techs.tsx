@@ -1,62 +1,69 @@
+import cardTriangles from "@/public/images/card-triangles.svg";
+import logo from "@/public/images/logo.svg";
 import Image from "next/image";
-import React from "react";
-import girlImg from "@/public/images/girl2.svg";
-import circleSvg from "@/public/images/Ellipse 1909.svg";
-
 const Techs = () => {
-  const bullets = [
-    " كل نسيج جسدي مرتبط بشعور محدد",
-    " المرض هو صوره الاضطراب الشعورى المقابل للنسيج .",
+  const items = [
+    {
+      title: "فهم جذر المرض",
+      desc: " كل نسيج جسدي مرتبط بشعور محدد المرض هو صوره الاضطراب الشعورى المقابل للنسيج",
+    },
+    {
+      title: "تلقي رسالة المرض",
+      desc: " المرض رسالة من مشاعرك المضطربة، وبمجرد فهمها تبدأ عملية الشفاء الذاتى",
+    },
+    {
+      title: "التدريب على الاتزان الشعوري",
+      desc: " تدريبات مكثفة  على على اختيار المشاعر المتزنة، مما يوثر ايجابا عى صحتك و حالتك الشعوريه",
+    },
   ];
+
   return (
-    <div className="flex text-white justify-center mx-4 mb-[60px] md:mb-[96px] ">
-      <div className=" flex-col md:flex lg:flex-row justify-between lg:gap-[96px]  border-2 border-[#fed36c] rounded-3xl">
-        <Image
-          src={girlImg}
-          alt="skeleton"
-          className="w-full rounded-br-xl rounded-tr-3xl md:rounded-tr-none md:rounded-br-none rounded-tl-3xl rounded-bl-xl  md:rounded-bl-3xl md:rounded-3xl"
-        />
-        <div
-          dir="rtl"
-          className="flex px-2 md:px-8 md:py-[60px] flex-col justify-between"
-        >
-          <h1 className="self-stretch text-[#ffffff] text-right [font-family:PNU] text-[32px] font-bold leading-[normal]">
-            التقنيات المستخدمة في الجلسات
-          </h1>
-          <p className="text-[#ffffff] text-right [font-family:PNU] text-xl font-bold leading-[normal]">
-            فهم جذر المرض:
-          </p>
-          {bullets.map((bullet, index) => (
-            <div key={index} className="py-2 md:py-2 flex items-center gap-4">
-              <Image src={circleSvg} alt="icon" />
-              <span className="md:w-[512.818px] text-[#ffffff] text-right [font-family:PNU] text-sm md:text-xl font-normal ">
-                {bullet}
-              </span>
+    <div
+      dir="rtl"
+      className="flex  flex-col text-white justify-center mx-4 mb-[60px] md:mb-[96px] "
+    >
+      <h1 className="flex-[1_0_0] mb-[30px] lg:mb-[68px] text-[#F6BE85] text-center [font-family:--font-monadi] text-xl lg:text-4xl font-normal leading-[normal]">
+        التقنيات المستخدمة في الجلسات
+      </h1>
+
+      <div className="flex-col lg:flex lg:flex-row justify-center items-start gap-4 ">
+        {items.map((item, index) => (
+          <div
+            key={index}
+            className="bg-transparent mb-[68px] w-[280px] lg:w-[355px] h-[424px] flex flex-col gap-4  border border-yellow-700 rounded-lg overflow-hidden"
+          >
+            <Image src={cardTriangles} alt="shape" className="w-full " />
+            <div className="flex px-2 items-center gap-2 justify-between mb-4">
+              <h1 className="[font-family:--font-monadi] text-lg font-bold ">
+                {item.title}
+              </h1>
+              <Image src={logo} alt="logo" className="w-[80px] lg:w-[119px]" />
             </div>
-          ))}
-          <p className="text-[#ffffff] text-right [font-family:PNU] text-xl font-bold leading-[normal]">
-            تلقي رسالة المرض:
-          </p>
-          <div className="py-2 md:py-2 flex items-center gap-4">
-            <Image src={circleSvg} alt="icon" />
-            <span className="md:w-[512.818px] text-[#ffffff] text-right [font-family:PNU] text-sm md:text-xl font-normal leading-[normal]">
-              المرض هو صوره الاضطراب الشعورى المقابل للنسيج .{" "}
-            </span>
+            <p className="p-4 font-semibold w-full">{item.desc}</p>
           </div>
-          <p className="text-[#ffffff] text-right [font-family:PNU] text-xl font-bold leading-[normal]">
-            التدريب  على الاتزان الشعوري:
-          </p>
-          <div className="py-2 md:py-2 flex items-center gap-4">
-            <Image src={circleSvg} alt="icon" />
-            <span className="md:w-[512.818px] text-[#ffffff] text-right [font-family:PNU] text-sm md:text-xl font-normal leading-[normal]">
-               تدريبات مكثفة  على على اختيار المشاعر المتزنة، مما يوثر ايجابا عى
-              صحتك و حالتك الشعوريه .
-            </span>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
 };
 
 export default Techs;
+
+/* 
+
+
+<div
+            key={index}
+            className="bg-transparent w-[348px] flex flex-col gap-4  border border-yellow-700 rounded-lg overflow-hidden"
+          >
+            <Image src={cardTriangles} alt="shape" className="w-full " />
+            <div className="flex  items-center gap-2 justify-between mb-4">
+              <h1 className="[font-family:--font-monadi] text-lg font-bold ">
+                {item.title}
+              </h1>
+              <Image src={logo} alt="logo" className="w-[119px]" />
+            </div>
+            <p className="p-4 font-semibold w-full">{item.desc}</p>
+          </div>
+
+*/

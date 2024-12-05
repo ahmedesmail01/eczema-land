@@ -1,66 +1,67 @@
 import Image from "next/image";
 import React from "react";
-import skull from "@/public/images/skull.svg";
-import arrow from "@/public/images/Frame 427322974.svg";
+// import skeleton from "@/public/images/skeleton.svg";
+// import circleSvg from "@/public/images/Ellipse 1909.svg";
+import cardPhoto from "@/public/images/card-photo.svg";
+import cardPhotoMob from "@/public/images/card-photo-mob.svg";
+import triangles from "@/public/images/triangles.svg";
+import polygon from "@/public/images/polygon.svg";
 
 const Gain = () => {
   const items = [
-    " فهم عميق للاضطرابات الشعورية المؤثرة على حالتك الصحية.",
-    " تعلم تقنيات إدارة الحالة بطريقة فعّالة ودائمة.",
-    " إرشادات مخصصة لتحسين جودة حياتك اليومية.",
-    "  دعم جماعي يعزز رحلة الشفاء الخاصة بك.",
-    "جلسه أسبوعية مدتها ساعه ونصف يقدمها دكتور احمد الدملاوي و يناقش فيها الحاضرين حول تفاصيل مشاعرهم و معتقداتهم التى تؤدى إلى اضطراب الغدة الدرقية ",
-    "منصة لكل عملاء مجموعات الغدة الدرقية السابقين واللاحقين يتناقشون فيها حول موضوعاتهم المشتركه",
-    "يدير المنصة مجموعة من مرشدين الشفاء الذاتى المتدربات على مشاعر الغدة الدرقية ",
-    "المنصه 24 ساعه 7 ايام فى الاسبوع مادة علمية متجددة و متطوره",
-    "برامج تدريبية يقدمها مرشدون الشفاء طول الاسبوع",
-    "يستفيد المشاركون بخبرات وتجارب الاخرين من خلال متابعة الاخر يرى كل مشارك بعد فى نفسه هو .. هى . لم يكن يراه من قبل",
-    "سريه تامه فيما يدور فى البرنامج من جميع الأطراف",
+    "فهم عميق للاضطرابات الشعورية المؤثرة على حالتك الصحية",
+    "تعلم تقنيات إدارة الحالة بطريقة فعّالة ودائمة.",
+    "  إرشادات مخصصة لتحسين جودة حياتك اليومية.",
+    "دعم جماعي يعزز رحلة الشفاء الخاصة بك.",
+    "جلسة أسبوعية مدتها ساعه ونصف يقدمها دكتور احمد الدملاوي و يناقش فيها الحاضرين حول تفاصيل مشاعرهم و معتقداتهم التى تؤدى إلى ظهور الصدفية والإكزيما",
+    "منصة لكل عملاء مجموعات الصدفية والإكزيما السابقين واللاحقين يتناقشون فيها حول موضوعاتهم المشتركه",
   ];
-
   return (
     <>
-      <h1 className="self-stretch text-[#ffffff] text-center [font-family:PNU] mb-4 text-3xl lg:text-[40px] font-bold leading-[160%]">
-        ماذا تستفيد عندما تلتحق بالمجموعة العلاجية الخاصة بالغدة الدرقية؟
-      </h1>
-      <div className="flex-col px-4   lg:flex-row-reverse md:flex  items-start lg:gap-6 justify-center lg:mb-[96px] mb-[60px] [font-family:'Expo_Arabic']">
-        <Image
-          src={skull}
-          alt="image"
-          width={612}
-          height={986}
-          className="w-[330px] mb-4 lg:w-[612px] lg:h-[1168px] object-cover rounded-3xl"
-        />
+      <div className="relative z-40 flex max-w-full  flex-col px-6 md:px-8 lg:px-[166px] gap-4 justify-center  mb-[60px] md:mb-[96px] ">
         <div
           dir="rtl"
-          className="lg:w-[612px] w-[330px]  lg:h-auto bg-[#212116] lg:py-[48px] px-4 py-8 lg:px-[96px] text-white rounded-3xl"
+          className=" w-full flex py-8  flex-col justify-center items-center  lg:flex lg:flex-row-reverse lg:items-center lg:justify-center gap-10 "
         >
-          <h1 className="self-stretch text-white text-right mb-4   text-2xl  lg:text-[32px] font-bold leading-[160%]">
-            من خلال الجلسات:{" "}
-          </h1>
+          <Image src={cardPhoto} alt="photo" className="hidden lg:flex z-40" />
+          <Image
+            src={cardPhotoMob}
+            alt="photo"
+            className="block lg:hidden w-[300px] z-40"
+          />
+          <div className="  w-full flex flex-col  px-4    gap-4 lg:justify-center h-auto  lg:items-start">
+            {/* triangles pattern */}
+            <Image
+              src={triangles}
+              alt="triangles"
+              className="absolute left-0 top-48 z-10"
+            />
+            <h1 className="  text-[#F6BE85] text-center lg:text-right mb-[20px] [font-family:--font-monadi] w-full  text-[18px]  lg:text-[28px] font-normal ">
+              ماذا تستفيد عندما تلتحق بالمجموعة العلاجية الخاصة بالصدفية
+              والإكزيما؟{" "}
+            </h1>
 
-          <div className="flex flex-col gap-4 ">
-            {items.map((item, index) => {
-              return (
-                <div key={index} className="flex gap-4 items-center">
-                  <Image
-                    src={arrow}
-                    alt="icon"
-                    className="w-[40px] lg:w-[60px]"
-                  />{" "}
-                  <p className="flex flex-col justify-center flex-[1_0_0] self-stretch text-white text-right text-base lg:text-lg font-medium leading-[160%]">
+            <div>
+              {items.map((item, index) => (
+                <div key={index} className="flex items-center gap-4">
+                  <Image src={polygon} alt="icn" />
+
+                  <p
+                    key={index}
+                    className=" text-[#ffffff] text-start w-full  text-[16px]  lg:text-[24px] font-normal  "
+                  >
                     {item}
                   </p>
                 </div>
-              );
-            })}
+              ))}
+            </div>
+
+            {/* <a href="#subscribe">
+              <button className=" flex items-center rounded-lg border border-white hover:border-none  justify-center w-[170px] h-[42px] px-8 text-white bg-[#c87331]  text-center [font-family:--font-monadi] text-sm lg:text-xl font-normal  ">
+                أشترك الان
+              </button>
+            </a> */}
           </div>
-          <a
-            href="#subscribe"
-            className="flex mt-8 text-white font-bold text-sm md:text-xl w-[130px] md:w-[195px] h-[50px] md:h-[60px] justify-center items-center gap-2 bg-gradient-to-r from-[#f8cb0a] to-[#493c04] shadow-md px-4 py-2 rounded-2xl"
-          >
-            اشترك الآن
-          </a>
         </div>
       </div>
     </>

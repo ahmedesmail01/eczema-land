@@ -7,10 +7,21 @@
   --foreground: #171717;
 }
 
+@font-face {
+  font-family: "Monadi";
+  src: url("/fonts/ArbFONTS-Monadi.ttf") format("ttf"),
+    url("/fonts/ArbFONTS-Monadi.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: "Monadi", sans-serif;
+}
 * {
   padding: 0;
   margin: 0;

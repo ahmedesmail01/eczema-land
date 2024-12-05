@@ -26,7 +26,7 @@ const Footer = () => {
   ];
   //
   return (
-    <div className="flex w-full flex-col items-center justify-center bg-black">
+    <div className="flex w-full flex-col items-center justify-center ">
       <div className="flex flex-row-reverse items-center justify-center gap-4 lg:gap-[88px] mb-[64px]">
         {socials.map((social, index) => (
           <a
@@ -36,11 +36,13 @@ const Footer = () => {
             className="flex items-center gap-2"
           >
             <Image src={social.logo} alt={social.title} />
-            <span>{social.title}</span>
+            <span className="hidden lg:block ">{social.title}</span>
           </a>
         ))}
       </div>
-      <p className="pb-8">© 2024 All Rights Reserved - Mange The Now</p>
+      <p className="pb-8 text-sm lg:text-2xl">
+        © 2024 All Rights Reserved - Mange The Now
+      </p>
     </div>
   );
 };

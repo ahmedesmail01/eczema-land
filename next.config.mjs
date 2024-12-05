@@ -5,8 +5,8 @@ const nextConfig = withVideos({
   // Your existing Next.js configuration options here
   reactStrictMode: true,
   output: "export",
-  assetPrefix: "/thyroid-gland",
-  basePath: "/thyroid-gland",
+  assetPrefix: "/eczema-and-psoriasis",
+  basePath: "/eczema-and-psoriasis",
 });
 
 export default nextConfig;

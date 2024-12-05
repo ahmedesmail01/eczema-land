@@ -21,18 +21,23 @@ const Hero = () => {
       </video>
 
       {/* Gradient Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full z-10 bg-gradient-to-b from-transparent to-black"></div>
+      <div className="absolute top-0 left-0 w-full h-full z-10 bg-gradient-to-b from-[#424242b8] to-[#22271b]"></div>
 
       {/* Overlay Content */}
       <div className="relative z-20 flex flex-col items-center">
-        <Image src={logo} alt="logo" className="mb-6" />
-        <p className="mb-4 text-[#ffffff] text-center font-bold text-xl md:text-2xl leading-relaxed">
-          التشافي الذاتي يبدأ باستعادة الاتزان الشعوري <br />
-          الاتزان الشعوري هو حال السكون والطمأنينة تجاه الاحداث و الافكار
+        <Image src={logo} alt="logo" className="mb-6 w-[200px] lg:w-auto" />
+        <p className=" text-[#fff] text-center mb-4 [font-family:--font-monadi] text-2xl lg:text-4xl font-normal leading-[139%] left-[385px] top-[454px]">
+          اكتشف قوة التشافي الذاتي
+        </p>
+        <p className=" text-[#A7A7A7] text-center mb-3 [font-family:--font-monadi] text-2xl lg:text-4xl font-normal leading-[139%] left-[385px] top-[454px]">
+          استعد اتزانك الشعوري لتحسين صحتك وحياتك{" "}
+        </p>
+        <p className=" text-[#A7A7A7] mb-[32px] text-center font-[pnu] text-xl lg:text-2xl font-normal leading-[139%] left-[385px] top-[454px]">
+          مشاعرك بوابة لصحة أفضل
         </p>
         <a
           href="#subscribe"
-          className="flex text-white font-bold text-sm md:text-xl w-[130px] md:w-[195px] h-[50px] md:h-[60px] justify-center items-center gap-2 bg-gradient-to-r from-[#f8cb0a] to-[#493c04] shadow-md px-4 py-2 rounded-2xl"
+          className="flex text-white font-bold text-sm lg:text-lg w-[172px] h-[47px] justify-center items-center gap-2 bg-[#c87331] shadow-md px-4 py-2 rounded-lg"
         >
           اشترك الآن
         </a>
