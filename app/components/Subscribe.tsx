@@ -27,9 +27,12 @@ const Subscribe = () => {
         <bdi className="self-stretch text-[#fff] text-center font-['Expo_Arabic'] text-xl font-semibold leading-6">
           12 لقاء مع دكتور أحمد الدملاوي
         </bdi>
-        <button className="flex justify-center font-bold items-center text-white font-['Expo_Arabic'] lg:text-[32px] gap-1 self-stretch bg-[#bc662d] px-4 py-8 rounded-[20px]">
+        <a
+          href="https://payment.mtnhealingcenter.com/payment/8a7dac25-c00f-44e8-8815-c217ec0cbf23"
+          className="flex justify-center font-bold items-center text-white font-['Expo_Arabic'] lg:text-[32px] gap-1 self-stretch bg-[#bc662d] px-4 py-8 rounded-[20px]"
+        >
           أشترك الان
-        </button>
+        </a>
       </div>
     </div>
   );

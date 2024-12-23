@@ -36,7 +36,7 @@ const Hero = () => {
           مشاعرك بوابة لصحة أفضل
         </p>
         <a
-          href="#subscribe"
+          href="https://payment.mtnhealingcenter.com/payment/8a7dac25-c00f-44e8-8815-c217ec0cbf23"
           className="flex text-white font-bold text-sm lg:text-lg w-[172px] h-[47px] justify-center items-center gap-2 bg-[#c87331] shadow-md px-4 py-2 rounded-lg"
         >
           اشترك الآن

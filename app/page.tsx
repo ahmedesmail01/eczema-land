@@ -14,7 +14,7 @@ import WhySec from "./components/WhySec";
 
 export default function Home() {
   return (
-    <main className="container font-[pnu] flex flex-col max-w-[100vw] overflow-hidden  justify-center items-center bg-[#22271b] text-white">
+    <main className="container [font-family:--font-cairo] flex flex-col max-w-[100vw] overflow-hidden  justify-center items-center bg-[#22271b] text-white">
       <Hero />
       <SecTwo />
       <WhySec />

@@ -4,7 +4,7 @@ import React from "react";
 // import circleSvg from "@/public/images/Ellipse 1909.svg";
 import Marq from "./Marq";
 import cardPhoto from "@/public/images/card-photo.svg";
-import cardPhotoMob from "@/public/images/card-photo-mob.svg";
+import cardPhotoMob from "@/public/images/card-photo.svg";
 import triangles from "@/public/images/triangles.svg";
 
 const SecTwo = () => {
@@ -37,17 +37,17 @@ const SecTwo = () => {
             آلية التشافي الذاتي
           </bdi>
 
-          <p className=" text-white text-right lg:mb-20  text-[14px] lg:text-[16px] font-normal  opacity-80 leading-relaxed">
-            لتشافي الذاتي يبدأ باستعادة الاتزان الشعوري، وهو حال السكون
+          <bdi className=" text-white text-right lg:mb-20  text-[14px] lg:text-[16px] font-normal  opacity-80 leading-relaxed">
+            التشافي الذاتي يبدأ من خلال استعادة الاتزان الشعوري، وهو حال السكون
             والطمأنينة تجاه الأحداث والأفكار، حيث إن الإنسان كيان متكامل من
             الجسد والمشاعر، وأي اضطراب شعوري ينعكس على الجسد في صورة مرض، وهذه
             الجلسات تمكن الفرد من فهم وإدارة مشاعره المضطربة التي تُعد السبب
             الجذري للاضطرابات الصحية، فالتشافي الذاتي هو نظام فطري أودعه الله في
             كل إنسان، وباستعادة التوازن الداخلي يساعد الجسد على استعادة عافيته
-            ورفع جودة الحياة نفسيًا وجسديًا.
-          </p>
+            ورفع جودة الحياة نفسيًا وجسديًا.{" "}
+          </bdi>
 
-          <a href="#subscribe">
+          <a href="https://payment.mtnhealingcenter.com/payment/8a7dac25-c00f-44e8-8815-c217ec0cbf23">
             <button className=" flex items-center rounded-lg border border-white hover:border-none  justify-center w-[170px] h-[42px] px-8 text-white bg-[#c87331]  text-center [font-family:--font-monadi] text-sm lg:text-xl font-normal  ">
               أشترك الان
             </button>

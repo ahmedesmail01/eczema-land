@@ -4,7 +4,8 @@ import React from "react";
 // import cardTriangles from "@/public/images/card-triangles.svg";
 import Image from "next/image";
 // import logo from "@/public/images/logo.svg";
-import girlCard from "@/public/images/girl-card.svg";
+import girlCardLeft from "@/public/images/girl-card-left.svg";
+import girlCardRight from "@/public/images/girl-card-right.svg";
 import triangles from "@/public/images/triangles.svg";
 
 const WhySec = () => {
@@ -12,9 +13,11 @@ const WhySec = () => {
     {
       title: "فهم علاقة الجسد والمشاعر",
       desc: "رؤية واضحة لعلاقة مشاعرك والمرض، مما يساعدك على فهم السبب الجذري الشعوري للمرض",
+      img: girlCardRight,
     },
     {
       title: "استعادة القدرة الفطرية على الشفاء",
+      img: girlCardLeft,
       desc: "تدريبات شعورية مكثفة، لتتعلم  إدارة ذاتك ومشاعرك بفعالية،عند ادارتك لذاتك و مشاعرك بفاعلية تتحسن حالتك الصحية  مع كل تحسن في إدارتك الشعورية  مما يعزز تحسن حالتك الصحية تدريجيًا.",
     },
   ];
@@ -38,7 +41,7 @@ const WhySec = () => {
             key={index}
             className="bg-transparent p-4 w-[300px] md:w-[350px] h-[448px] flex flex-col gap-4  border border-yellow-700 rounded-lg overflow-hidden"
           >
-            <Image src={girlCard} alt="shape" className="w-full " />
+            <Image src={item.img} alt="shape" className="w-full " />
             <h1 className=" [font-family:--font-monadi] text-lg font-bold ">
               {item.title}
             </h1>

@@ -54,7 +54,7 @@ const Suffer = () => {
           })}
         </div>
         <a
-          href="#subscribe"
+          href="https://payment.mtnhealingcenter.com/payment/8a7dac25-c00f-44e8-8815-c217ec0cbf23"
           className="flex mt-8 text-white font-bold text-sm md:text-xl w-[130px] md:w-[195px] h-[50px] md:h-[60px] justify-center items-center gap-2 bg-gradient-to-r from-[#f8cb0a] to-[#493c04] shadow-md px-4 py-2 rounded-2xl"
         >
           اشترك الآن

@@ -2,8 +2,8 @@ import Image from "next/image";
 import React from "react";
 // import skeleton from "@/public/images/skeleton.svg";
 // import circleSvg from "@/public/images/Ellipse 1909.svg";
-import cardPhoto from "@/public/images/card-photo.svg";
-import cardPhotoMob from "@/public/images/card-photo-mob.svg";
+import cardPhoto from "@/public/images/card-photo-hug.svg";
+import cardPhotoMob from "@/public/images/card-photo-hug.svg";
 import triangles from "@/public/images/triangles.svg";
 const Psoriasis = () => {
   return (
@@ -39,7 +39,7 @@ const Psoriasis = () => {
             <span className="text-[#F6BE85] font-bold">قراءة المزيد</span>
           </p>
 
-          <a href="#subscribe">
+          <a href="https://payment.mtnhealingcenter.com/payment/8a7dac25-c00f-44e8-8815-c217ec0cbf23">
             <button className=" flex items-center rounded-lg border border-white hover:border-none  justify-center w-[170px] h-[42px] px-8 text-white bg-[#c87331]  text-center [font-family:--font-monadi] text-sm lg:text-xl font-normal  ">
               أشترك الان
             </button>
